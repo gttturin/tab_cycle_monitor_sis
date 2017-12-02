@@ -41,14 +41,17 @@ function openNextTab() {
  */
 function toggleTabCycle() {
   if (enabled === 0) {
-    enabled = setInterval(openNextTab, 5000);
+    browser.storage.sync.get('delay')
+      .then((res) => {
+        const delay  = (res.delay !== undefined) ? res.delay * 1000 : 5000;
+        enabled = setInterval(openNextTab, delay);
+        updateIcon();
+      });
   } else {
     clearInterval(enabled);
     enabled = 0;
-
+    updateIcon();
   }
-  console.log('enabled: ', enabled);
-  updateIcon();
 }
 
 browser.browserAction.onClicked.addListener(toggleTabCycle);

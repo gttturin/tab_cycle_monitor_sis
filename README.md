@@ -6,4 +6,4 @@ Useful for instance for kiosk PCs.
 
 Cycling can be disabled by pressing a toolbar button.
 
-Cycling time is currently every 5 seconds (TODO: make this configurable).
+Cycle time is 5 second by default.
