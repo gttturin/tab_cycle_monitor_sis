@@ -6,7 +6,8 @@
   "homepage_url": "https://github.com/koen92/tab_cycle",
   "applications" : {
     "gecko": {
-      "id": "tab-cycle@mozilla.org"
+      "id": "tab-cycle@mozilla.org",
+      "strict_min_version": "57.0"
     }
   },
   "icons": {
