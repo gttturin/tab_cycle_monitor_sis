@@ -1,12 +1,12 @@
 {
   "manifest_version": 2,
-  "name": "Tab cycle",
+  "name": "GTT SIS Tab cycle",
   "version": "1.0",
-  "description": "A simple tab cycle extension compatible with Firefox Quantum.",
-  "homepage_url": "https://github.com/koen92/tab_cycle",
+  "description": "modified tab cycle firefox plugin for gtt sis",
+  "homepage_url": "https://github.com/gttturin/tab_cycle_monitor_sis",
   "applications" : {
     "gecko": {
-      "id": "tab-cycle@mozilla.org",
+      "id": "campagna.a@gtt.to.it",
       "strict_min_version": "57.0"
     }
   },
